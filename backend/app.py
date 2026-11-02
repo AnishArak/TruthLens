@@ -11,6 +11,26 @@ from flask_cors import CORS
 from config import Config
 from database.mongo import MongoStore
 from utils.responses import ApiError, fail
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+@app.route("/")
+def home():
+    return jsonify({
+        "message": "TruthLens API is running!"
+    })
+
+@app.route("/api/health")
+def health():
+    return jsonify({
+        "status": "healthy"
+    })
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("truthlens")
