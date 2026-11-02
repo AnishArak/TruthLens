@@ -1,0 +1,162 @@
+{
+  "trained_at": "2026-11-02T22:40:53.533799+00:00",
+  "seed": 42,
+  "dataset": "Kaggle Fake and Real News Dataset (Fake.csv + True.csv)",
+  "n_train": 31280,
+  "n_test": 7820,
+  "sampled_run": false,
+  "best_model": "Linear SVM",
+  "selection_criterion": "highest F1-score on held-out test set",
+  "models": [
+    {
+      "name": "Logistic Regression",
+      "accuracy": 0.9900255754475703,
+      "precision": 0.9932413404674739,
+      "recall": 0.9849204132923765,
+      "f1": 0.9890633763320247,
+      "confusion_matrix": [
+        [
+          4215,
+          24
+        ],
+        [
+          54,
+          3527
+        ]
+      ],
+      "labels": [
+        "REAL",
+        "FAKE"
+      ],
+      "classification_report": {
+        "REAL": {
+          "precision": 0.9873506676036542,
+          "recall": 0.9943382873319179,
+          "f1-score": 0.9908321579689704,
+          "support": 4239.0
+        },
+        "FAKE": {
+          "precision": 0.9932413404674739,
+          "recall": 0.9849204132923765,
+          "f1-score": 0.9890633763320247,
+          "support": 3581.0
+        },
+        "accuracy": 0.9900255754475703,
+        "macro avg": {
+          "precision": 0.9902960040355641,
+          "recall": 0.9896293503121472,
+          "f1-score": 0.9899477671504975,
+          "support": 7820.0
+        },
+        "weighted avg": {
+          "precision": 0.9900481739368177,
+          "recall": 0.9900255754475703,
+          "f1-score": 0.990022182643919,
+          "support": 7820.0
+        }
+      },
+      "test_size": 7820,
+      "train_seconds": 13.31
+    },
+    {
+      "name": "Multinomial Naive Bayes",
+      "accuracy": 0.9612531969309462,
+      "precision": 0.9535141117874931,
+      "recall": 0.9623010332309411,
+      "f1": 0.9578874218207089,
+      "confusion_matrix": [
+        [
+          4071,
+          168
+        ],
+        [
+          135,
+          3446
+        ]
+      ],
+      "labels": [
+        "REAL",
+        "FAKE"
+      ],
+      "classification_report": {
+        "REAL": {
+          "precision": 0.9679029957203994,
+          "recall": 0.9603680113234253,
+          "f1-score": 0.9641207815275311,
+          "support": 4239.0
+        },
+        "FAKE": {
+          "precision": 0.9535141117874931,
+          "recall": 0.9623010332309411,
+          "f1-score": 0.9578874218207089,
+          "support": 3581.0
+        },
+        "accuracy": 0.9612531969309462,
+        "macro avg": {
+          "precision": 0.9607085537539463,
+          "recall": 0.9613345222771832,
+          "f1-score": 0.96100410167412,
+          "support": 7820.0
+        },
+        "weighted avg": {
+          "precision": 0.9613139172851388,
+          "recall": 0.9612531969309462,
+          "f1-score": 0.9612663491605067,
+          "support": 7820.0
+        }
+      },
+      "test_size": 7820,
+      "train_seconds": 13.67
+    },
+    {
+      "name": "Linear SVM",
+      "accuracy": 0.9959079283887468,
+      "precision": 0.9947030945079454,
+      "recall": 0.9963697291259425,
+      "f1": 0.9955357142857143,
+      "confusion_matrix": [
+        [
+          4220,
+          19
+        ],
+        [
+          13,
+          3568
+        ]
+      ],
+      "labels": [
+        "REAL",
+        "FAKE"
+      ],
+      "classification_report": {
+        "REAL": {
+          "precision": 0.9969288920387432,
+          "recall": 0.995517810804435,
+          "f1-score": 0.996222851746931,
+          "support": 4239.0
+        },
+        "FAKE": {
+          "precision": 0.9947030945079454,
+          "recall": 0.9963697291259425,
+          "f1-score": 0.9955357142857143,
+          "support": 3581.0
+        },
+        "accuracy": 0.9959079283887468,
+        "macro avg": {
+          "precision": 0.9958159932733444,
+          "recall": 0.9959437699651887,
+          "f1-score": 0.9958792830163227,
+          "support": 7820.0
+        },
+        "weighted avg": {
+          "precision": 0.9959096361617884,
+          "recall": 0.9959079283887468,
+          "f1-score": 0.9959081919964685,
+          "support": 7820.0
+        }
+      },
+      "test_size": 7820,
+      "train_seconds": 16.49
+    }
+  ]
+}

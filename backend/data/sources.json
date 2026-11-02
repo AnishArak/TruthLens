@@ -1,0 +1,44 @@
+{
+  "_note": "Starter list for the Source Credibility feature. It is a configurable reference, NOT an authoritative rating. Edit freely. A domain that is not listed is 'unlisted' - that says nothing about whether it is reliable.",
+  "categories": {
+    "wire_service": "News agency that supplies reporting to many outlets",
+    "established_news": "Long-running news organisation with editorial standards and published corrections policy",
+    "public_broadcaster": "Publicly funded broadcaster",
+    "fact_checker": "Organisation whose main work is fact-checking claims",
+    "satire": "Satirical publication; content is not intended as factual reporting"
+  },
+  "sources": {
+    "reuters.com": {"name": "Reuters", "category": "wire_service", "country": "UK/Global"},
+    "apnews.com": {"name": "Associated Press", "category": "wire_service", "country": "US"},
+    "afp.com": {"name": "Agence France-Presse", "category": "wire_service", "country": "France"},
+    "bbc.com": {"name": "BBC", "category": "public_broadcaster", "country": "UK"},
+    "bbc.co.uk": {"name": "BBC", "category": "public_broadcaster", "country": "UK"},
+    "npr.org": {"name": "NPR", "category": "public_broadcaster", "country": "US"},
+    "pbs.org": {"name": "PBS", "category": "public_broadcaster", "country": "US"},
+    "nytimes.com": {"name": "The New York Times", "category": "established_news", "country": "US"},
+    "washingtonpost.com": {"name": "The Washington Post", "category": "established_news", "country": "US"},
+    "theguardian.com": {"name": "The Guardian", "category": "established_news", "country": "UK"},
+    "thehindu.com": {"name": "The Hindu", "category": "established_news", "country": "India"},
+    "indianexpress.com": {"name": "The Indian Express", "category": "established_news", "country": "India"},
+    "hindustantimes.com": {"name": "Hindustan Times", "category": "established_news", "country": "India"},
+    "timesofindia.indiatimes.com": {"name": "The Times of India", "category": "established_news", "country": "India"},
+    "snopes.com": {"name": "Snopes", "category": "fact_checker", "country": "US"},
+    "politifact.com": {"name": "PolitiFact", "category": "fact_checker", "country": "US"},
+    "factcheck.org": {"name": "FactCheck.org", "category": "fact_checker", "country": "US"},
+    "fullfact.org": {"name": "Full Fact", "category": "fact_checker", "country": "UK"},
+    "altnews.in": {"name": "Alt News", "category": "fact_checker", "country": "India"},
+    "boomlive.in": {"name": "BOOM", "category": "fact_checker", "country": "India"},
+    "factly.in": {"name": "Factly", "category": "fact_checker", "country": "India"},
+    "theonion.com": {"name": "The Onion", "category": "satire", "country": "US"}
+  },
+  "fact_checking_references": [
+    {"name": "International Fact-Checking Network (Poynter)", "url": "https://www.poynter.org/ifcn/"},
+    {"name": "Snopes", "url": "https://www.snopes.com/"},
+    {"name": "PolitiFact", "url": "https://www.politifact.com/"},
+    {"name": "FactCheck.org", "url": "https://www.factcheck.org/"},
+    {"name": "Full Fact", "url": "https://fullfact.org/"},
+    {"name": "Alt News", "url": "https://www.altnews.in/"},
+    {"name": "BOOM Fact Check", "url": "https://www.boomlive.in/fact-check"},
+    {"name": "Google Fact Check Explorer", "url": "https://toolbox.google.com/factcheck/explorer"}
+  ]
+}

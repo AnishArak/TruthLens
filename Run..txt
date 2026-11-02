@@ -1,0 +1,11 @@
+python -m pip install --upgrade pip
+pip install -r backend\requirements.txt
+
+python -c "import flask, joblib, sklearn, pymongo, lime; print('all good')"
+
+python -c "import nltk; nltk.download('stopwords')"
+python ml\train.py
+python backend\app.py
+
+
+cd frontend; npm install; npm run dev 

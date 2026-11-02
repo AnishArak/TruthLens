@@ -1,0 +1,24 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Secrets
+.env
+
+# Data and trained binaries (re-create with ml/train.py)
+ml/dataset/*.csv
+ml/saved_models/*.joblib
+ml/saved_models/*.pkl
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
